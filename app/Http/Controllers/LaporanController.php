@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use App\Models\Peminjaman;
 use Illuminate\Http\Request;
 
@@ -17,6 +18,7 @@ class LaporanController extends Controller
             'title' => "Tabel Laporan"
         ])->with(compact('peminjamans'));
     }
+
 
     /**
      * Show the form for creating a new resource.

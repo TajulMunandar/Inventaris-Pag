@@ -3,7 +3,9 @@
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\LaporanBulananController;
 use App\Http\Controllers\LaporanController;
+use App\Http\Controllers\LaporanMingguanController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PeminjamanController;
 use App\Http\Controllers\UserController;
@@ -41,5 +43,10 @@ Route::prefix('/dashboard')->group(function () {
 
     Route::put('/peminjaman', [PeminjamanController::class, 'approve'])->name('peminjaman.approve')->middleware('auth');
 
-    Route::resource('/laporan', LaporanController::class)->middleware('auth');
+    Route::prefix('/laporan')->group(function () {
+        Route::resource('/laporan-utama', LaporanController::class)->middleware('auth');
+
+        Route::resource('/laporan-mingguan', LaporanMingguanController::class)->middleware('auth');
+        Route::resource('/laporan-bulanan', LaporanBulananController::class)->middleware('auth');
+    });
 });

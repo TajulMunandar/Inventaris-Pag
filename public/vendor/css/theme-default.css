@@ -422,7 +422,7 @@ button.list-group-item-primary.active {
 }
 
 .menu.bg-primary {
-  background-color: #1e40af !important;
+  background-color: #da251c !important;
   color: #e0e1ff;
 }
 .menu.bg-primary .menu-link,
@@ -452,13 +452,13 @@ button.list-group-item-primary.active {
   color: #fff;
 }
 .menu.bg-primary .menu-item.active > .menu-link:not(.menu-toggle) {
-  background-color: #2563eb;
+  background-color: #da251c;
 }
 .menu.bg-primary.menu-horizontal .menu-sub > .menu-item.active > .menu-link:not(.menu-toggle) {
-  background-color: #1d4ed8;
+  background-color: #da251c;
 }
 .menu.bg-primary.menu-horizontal .menu-inner .menu-item:not(.menu-item-closing) > .menu-sub, .menu.bg-primary.menu-horizontal .menu-inner .menu-item.open > .menu-toggle {
-  background: #2563eb;
+  background: #da251c;
 }
 .menu.bg-primary .menu-inner > .menu-item.menu-item-closing .menu-item.open .menu-sub,
 .menu.bg-primary .menu-inner > .menu-item.menu-item-closing .menu-item.open .menu-toggle {
@@ -493,7 +493,7 @@ button.list-group-item-primary.active {
 }
 .menu.bg-primary .menu-inner > .menu-item.open .menu-item.open > .menu-toggle::before,
 .menu.bg-primary .menu-inner > .menu-item.open .menu-item.active > .menu-link::before {
-  box-shadow: 0 0 0 2px #2563eb;
+  box-shadow: 0 0 0 2px #da251c;
 }
 .menu.bg-primary .ps__thumb-y,
 .menu.bg-primary .ps__rail-y.ps--clicking > .ps__thumb-y {
@@ -668,7 +668,7 @@ a:hover {
 .bg-menu-theme .menu-horizontal-prev:focus,
 .bg-menu-theme .menu-horizontal-next:hover,
 .bg-menu-theme .menu-horizontal-next:focus {
-  color: #1d4ed8;
+  color: #da251c;
 }
 .bg-menu-theme .menu-link.active,
 .bg-menu-theme .menu-horizontal-prev.active,
@@ -754,8 +754,8 @@ html:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner .menu-item .menu-lin
   color: #1e40af;
 }
 .bg-menu-theme .menu-inner > .menu-item.active > .menu-link {
-  color: #1e40af;
-  background-color: rgba(30, 64, 175, 0.16) !important;
+  color: #ffffff;
+  background-color: #da251c !important;
 }
 .bg-menu-theme .menu-inner > .menu-item.active:before {
   background: #1e40af;
@@ -764,12 +764,12 @@ html:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner .menu-item .menu-lin
   background-color: #b4bdc6 !important;
 }
 .bg-menu-theme .menu-sub > .menu-item.active > .menu-link:not(.menu-toggle):before {
-  background-color: #1e40af !important;
+  background-color: #da251c !important;
   border: 3px solid #e7e7ff !important;
 }
 
 .app-brand .layout-menu-toggle {
-  background-color: #1e40af;
+  background-color: #da251c;
   border: 7px solid #f5f5f9;
 }
 .app-brand .layout-menu-toggle i {

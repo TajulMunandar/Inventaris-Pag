@@ -1,7 +1,7 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
     <div class="app-brand">
-        <a class="navbar-brand fs-5 fw-bold" href="/">
-            <span style="color: #da251c">INVENTARIS</span> PAG
+        <a class="navbar-brand fs-5 fw-bold" href="/dashboard/">
+            <span style="color: #32599c">INVENTARIS</span> PAG
         </a>
     </div>
 
@@ -31,8 +31,8 @@
             </a>
         </li>
 
-        <li class="menu-item {{ Request::is('dashboard/laporan') ? 'active' : '' }}">
-            <a href="{{ route('laporan.index') }}" class="menu-link">
+        <li class="menu-item {{ Request::is('dashboard/laporan*') ? 'active' : '' }}">
+            <a href="{{ route('laporan-utama.index') }}" class="menu-link">
                 <i class="fa-book fa-solid  me-3"></i>
                 <div data-i18n="Analytics">Laporan</div>
             </a>

@@ -17,10 +17,10 @@
             <div class="card mt-3">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('laporan-utama.index') }}" >Laporan</a>
+                        <a class="nav-link " aria-current="page" href="{{ route('laporan-utama.index') }}" >Laporan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{ route('laporan-mingguan.index') }}">Mingguan</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('laporan-mingguan.index') }}">Mingguan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{ route('laporan-bulanan.index') }}">Bulanan</a>

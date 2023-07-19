@@ -14,7 +14,7 @@ class DashboardController extends Controller
     public function index()
     {
         $jumlahBarang = Barang::count();
-        $barang_done = Peminjaman::where('status', 0)->count();
+        $barang_done = Barang::where('qty', '>', 0)->count();
         $barang_running = Peminjaman::where('status', 1)->count();
         return view('dashboard.index',[
             'title' => "Dashboard"
