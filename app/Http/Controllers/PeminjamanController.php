@@ -21,9 +21,14 @@ class PeminjamanController extends Controller
             $peminjamans = Peminjaman::with('users', 'barangs')
                 ->where('status', 1)
                 ->orderBy('isApprove', 'asc')
+                ->whereHas('barangs.kategoris', function ($query) {
+                    $query->where('isHabis', 0);
+                })
                 ->get();
         } else {
-            $peminjamans = Peminjaman::with('users', 'barangs')->where('userId', auth()->user()->id)->where('status', 1)->get();
+            $peminjamans = Peminjaman::with('users', 'barangs')->where('userId', auth()->user()->id)->where('status', 1)->whereHas('barangs.kategoris', function ($query) {
+                $query->where('isHabis', 0);
+            })->get();
         }
         return view('dashboard.peminjaman.index', [
             'title' => "Tabel Peminjaman"
