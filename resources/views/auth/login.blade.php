@@ -36,10 +36,20 @@
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="{{ asset('js/config.js') }}"></script>
 
+  <style>
+    body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+  </style>
+
   <title>Inventaris | Login</title>
 </head>
 
-<body style="background-image: linear-gradient(to right, #5080da, #012258);">
+
+<body style="background-image: url('{{ asset('images/perta.jpg') }}');" >
 
   <div class="container-xxl">
     <div class="authentication-wrapper authentication-basic container-p-y">
@@ -67,7 +77,7 @@
             <!-- Logo -->
             <div class="app-brand justify-content-center">
               <a class="navbar-brand fw-bold fs-5" href="/">
-                <span class="merek">Inventaris</span> Pag
+                <img src="{{ asset('images/logos/pag.png') }}" class="img-fluid" alt="Login image" width="700" data-aos="zoom-in-down" data-aos-duration="1000">
               </a>
             </div>
             <!-- /Logo -->

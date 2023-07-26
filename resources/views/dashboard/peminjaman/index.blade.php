@@ -70,7 +70,8 @@
                                     <td>
                                         @if (auth()->user()->isAdmin == 0)
                                             <button data-bs-target="#modalCheck{{ $loop->iteration }}"
-                                                class="btn btn-sm btn-success" data-bs-toggle="modal">
+                                                class="btn btn-sm btn-success" data-bs-toggle="modal"
+                                                @if ($peminjaman->barangs->isHabis === 1) disabled @endif>
                                                 <i class="fa-regular fa-check fa-lg"></i>
                                             </button>
                                             <button data-bs-target="#modalApprove{{ $loop->iteration }}"
@@ -80,7 +81,8 @@
                                             </button>
                                         @else
                                             <button data-bs-target="#modalCheck{{ $loop->iteration }}"
-                                                class="btn btn-sm btn-success" data-bs-toggle="modal" @if ($peminjaman->isApprove === 0) disabled @endif>
+                                                class="btn btn-sm btn-success" data-bs-toggle="modal" 
+                                                @if ($peminjaman->isApprove === 0 && $peminjaman->barangs->isHabis === 1) disabled @endif>
                                                 <i class="fa-regular fa-check fa-lg"></i>
                                             </button>
                                         @endif
