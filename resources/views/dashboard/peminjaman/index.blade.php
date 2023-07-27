@@ -79,7 +79,7 @@
                                                 <i class="fa-regular fa-file fa-lg"></i>
                                             </button>
                                         @else
-                                            <button data-bs-target="#modalCheck{{ $loop->iteration }}""
+                                            <button data-bs-target="#modalCheck{{ $loop->iteration }}"
                                                 class="btn btn-sm btn-success" data-bs-toggle="modal"
                                                 @if ($peminjaman->isApprove === 0) disabled @endif>
                                                 <i class="fa-regular fa-check fa-lg"></i>

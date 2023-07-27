@@ -1,7 +1,7 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
     <div class="app-brand">
         <a class="navbar-brand fs-5 fw-bold" href="/dashboard/">
-            <span style="color: #32599c">INVENTARIS</span> <span  style="color : #da251c"> PAG </span>
+            <img src="{{ asset('images/logos/pag.png') }}" class="img-fluid" alt="Inventaris PAG" width="700">
         </a>
     </div>
 
